@@ -64,5 +64,29 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-JSW One is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+JSW One Platforms is the digital B2B arm of India's JSW Group, operating a full-stack e-commerce
+and services platform for the country's manufacturing and construction MSMEs. It runs four
+connected businesses on one technology stack: **JSW One Commerce** (jswonemsme.com), a multi-brand
+marketplace for TMT bars, mild/hot-rolled/cold-rolled and structural steel, coated steel, wire rods,
+cement and bitumen; **JSW One Homes** (jswonehomes.com), a turnkey home-construction service with
+digital project tracking across fifteen Indian cities; **JSW One Finance**, the NBFC arm providing
+digital credit lines, channel financing and invoice factoring; and private brands **JSW One TMT**
+and **One Helix**.
+
+## API surface
+
+JSW One publishes **no public API, developer portal, SDK or machine-readable contract**. Probed
+2026-08-23: `api.`, `developer.`, `docs.` and `apis.jswonemsme.com` do not resolve in DNS;
+`/openapi.json`, `/swagger.json`, `/graphql`, `/api-docs` and every `/.well-known/` path return a
+hard 404 on both `www.jswonemsme.com` and `www.jswonehomes.com`; the 830-URL sitemap has no
+developer or reference section; and the company's GitHub org
+([github.com/JSWOne](https://github.com/JSWOne)) ships CI actions and internal automation but no
+SDK, spec or client library.
+
+What it *does* publish is an agent-readable content surface: a maintained `llms.txt` on both
+consumer properties, and an explicit AI/LLM bot-access policy (Allow-Training / Allow-Retrieval per
+named crawler) inside the JSW One Homes `llms.txt`. Both are captured verbatim under `llms/`.
+
+- Website: https://www.jswonemsme.com/
+- JSW One Homes: https://www.jswonehomes.com/
+- GitHub: https://github.com/JSWOne

@@ -1,0 +1,94 @@
+# JSW One Homes
+
+> JSW One Homes is an end-to-end home construction service from the JSW Group, designed to make planning and building a home more transparent, reliable, and professionally managed.
+
+## Summary
+We help homeowners build durable, well-designed homes with confidence through architectural design, quality materials, verified contractors, and digital project tracking. Our integrated platform brings together home design, construction execution, and material assurance.
+
+## Core Services
+- **Home Design & Architecture**: Customized floor plans and 3D elevations.
+- **Turnkey Execution**: End-to-end construction managed by experts.
+- **Premium Materials**: Usage of JSW-grade steel, cement, and trusted materials.
+- **Digital Tracking**: Milestone-based updates and digital project visibility.
+
+## Key Resources
+- [Home Construction Gallery](/project-gallery) - Explore completed and ongoing residential projects.
+- [Cost Estimator](/cost-estimator) - Interactive tool for estimating home construction costs.
+- [Building Blogs](/blogs) - Educational insights and industry updates on home construction.
+- [FAQs](/faq) - Frequently Asked Questions about our processes.
+
+## Home Construction by City
+- [Bengaluru](/city/bengaluru)
+- [Chennai](/city/chennai)
+- [Hyderabad](/city/hyderabad)
+- [Pune](/city/pune)
+- [Coimbatore](/city/coimbatore)
+- [Kochi](/city/kochi)
+- [Mysuru](/city/mysuru)
+- [Hubli](/city/hubli)
+- [Bellary](/city/bellary)
+- [Indore](/city/indore)
+- [Nagpur](/city/nagpur)
+- [Raipur](/city/raipur)
+- [Bhubaneswar](/city/bhubaneswar)
+- [Cuttack](/city/cuttack)
+- [Salem](/city/salem)
+
+## Links
+- [About Us](/about-us)
+- [Customer Testimonials](/customer-testimonials)
+- [Contact Support](/contact-us)
+- [Join as Architect](/join-as-architect)
+
+## Sitemap
+https://www.jswonehomes.com/sitemap.xml
+
+## Bot Access Policy
+
+**JSW One Homes;** preferences for AI/LLM access, training, and content usage:
+
+- **User-agent: gptbot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: claudebot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: google-extended**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: perplexitybot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: neevabot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: youbot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: ccbot** (Common Crawl)
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: duckduckbot** (DuckDuckGo AI)
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: yandexbot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+- **User-agent: archive.org_bot**
+  Allow-Training: yes
+  Allow-Retrieval: yes
+
+### Default Rule for Unspecified or Future Bots
+
+- **User-agent: ***
+  Allow-Training: yes
+  Allow-Retrieval: yes

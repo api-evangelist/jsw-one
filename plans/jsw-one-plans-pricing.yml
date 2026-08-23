@@ -1,0 +1,29 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.jswonemsme.com/
+name: JSW One Plans and Pricing
+description: >-
+  JSW One publishes NO API plans, because it publishes no API. The company is a B2B
+  transactional marketplace: what it prices is physical material -- TMT bars, mild/hot-rolled/
+  cold-rolled and structural steel, coated steel, wire rods, cement and bitumen -- quoted per
+  SKU, per tonne and per delivery location, and the live prices sit behind a registered-MSME
+  login rather than on a public plans page. JSW One Homes prices turnkey home construction per
+  project through a cost estimator, and JSW One Finance underwrites credit per borrower. None
+  of these are API plans, subscription tiers, or metered developer pricing, so there is nothing
+  for this artifact to enumerate.
+plan_count: 0
+plans: []
+note: >-
+  Honest zero, not an unchecked field. Probed the site root, the sitemap (no /pricing or
+  /plans path exists among the 830 URLs it lists) and the help-support hub; product prices
+  require an authenticated business account. No apis.yml pointer of type Plans is emitted --
+  the provider publishes no plan surface and a pointer would assert one.
+evidence:
+  - url: https://www.jswonemsme.com/
+    status: 200
+  - url: https://www.jswonemsme.com/sitemap.xml
+    status: 200
+  - url: https://www.jswonemsme.com/login
+    status: 200
+  - url: https://www.jswonehomes.com/cost-estimator
+    status: 200

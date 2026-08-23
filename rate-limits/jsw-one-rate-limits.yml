@@ -1,0 +1,25 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.jswonemsme.com/help-support
+name: JSW One Rate Limits
+description: >-
+  JSW One documents no rate limits, because it exposes no public API to limit. There is no
+  developer portal, API reference, or published quota of any kind on any JSW One host. The only
+  machine-facing policy the company publishes is crawler policy: robots.txt on
+  www.jswonemsme.com disallows /customer/, /account/, /my-orders, /my-profile, /ledgerV1 and
+  faceted query strings, and the llms.txt on www.jswonehomes.com carries an explicit
+  Allow-Training / Allow-Retrieval policy for named AI crawlers. Neither is an API rate limit.
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  Honest zero. No RateLimits pointer is emitted in apis.yml: an agent reading a rate-limit
+  pointer would expect a runtime signal, and this provider returns none because it serves no
+  API. See x-coverage in apis.yml for why the profile is thin.
+evidence:
+  - url: https://www.jswonemsme.com/robots.txt
+    status: 200
+  - url: https://www.jswonemsme.com/help-support
+    status: 200
+  - url: https://www.jswonehomes.com/llms.txt
+    status: 200

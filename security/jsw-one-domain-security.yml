@@ -1,0 +1,32 @@
+generated: '2026-08-23'
+method: probed
+source: live DNS/TLS/HTTP probes of every JSW One consumer web host (no API host exists to probe)
+hosts:
+- host: www.jswonemsme.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 30 17:42:32 2026 GMT
+  hsts: false
+  note: No Strict-Transport-Security header observed on the JSW One MSME marketplace host.
+- host: www.jswonehomes.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 10 05:14:41 2026 GMT
+  hsts: true
+  hsts_header: max-age=31536000; includeSubDomains; preload
+domains:
+- domain: jswonemsme.com
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+  note: DMARC published at p=none (monitor only), rua=dmarc-reports@jswonemsme.com. No CAA record.
+- domain: jswonehomes.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: none
+  note: No SPF TXT record and no DNSSEC DS record. DMARC reports route to dmarc-reports@jswonemsme.com,
+    confirming shared operation with the marketplace domain.

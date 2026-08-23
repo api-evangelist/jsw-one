@@ -1,0 +1,106 @@
+generated: '2026-08-23'
+method: probed
+source: >-
+  Direct unauthenticated HTTPS probes of every JSW One web host found in apis.yml and in the
+  rendered markup of the two consumer properties. JSW One publishes no API and therefore has no
+  baseURL or OpenAPI servers[] host to probe.
+name: JSW One .well-known Probe
+description: >-
+  No .well-known document is served on any JSW One host. Every RFC 8615 path returns a hard
+  HTTP 404 on all three hosts probed. On www.jswonemsme.com the 404 is served two different
+  ways depending on the route class -- Next.js API routes answer with a 2-byte "{}" body while
+  page routes answer with the 550KB rendered 404 page -- but the status line is 404 in both
+  cases, so there is no soft-200 catch-all here. A control probe of a guaranteed-nonexistent
+  /.well-known/ path returned 404 on every host, confirming the negatives are real.
+  NO WellKnown and NO SecurityTxt pointer is emitted for this provider: nothing here is a hit.
+hit_count: 0
+
+hosts:
+  - host: https://www.jswonemsme.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: https://www.jswonehomes.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: https://www.jswonetmt.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+
+controls:
+  - url: https://www.jswonemsme.com/.well-known/definitely-not-here-xyz123
+    status: 404
+    bytes: 550409
+    note: Control probe. Page-route 404s render the full 404 page; the status line is still 404.
+  - url: https://www.jswonehomes.com/.well-known/definitely-not-here-xyz123
+    status: 404
+    bytes: 13018
+    note: Control probe. Hard 404.
+  - url: https://www.jswonetmt.com/.well-known/nope-xyz123
+    status: 404
+    bytes: 73020
+    note: Control probe. WordPress hard 404.
+
+x-related:
+  - note: >-
+      JSW One does not use /.well-known/ for agent signalling, but it DOES publish a bot-access
+      policy for AI crawlers inside its llms.txt on www.jswonehomes.com -- an in-document
+      equivalent of an AIPREF/consent signal rather than a well-known one. Captured verbatim at
+      llms/jsw-one-homes-llms.txt.
+    file: ../llms/jsw-one-homes-llms.txt

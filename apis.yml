@@ -1,17 +1,40 @@
 aid: jsw-one
 name: JSW One
-description: 'JSW One is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  JSW One Platforms is the digital B2B arm of India's JSW Group, operating a full-stack
+  e-commerce and services platform for the country's manufacturing and construction MSMEs.
+  It runs four connected businesses on one technology stack: JSW One Commerce
+  (jswonemsme.com), a multi-brand marketplace for TMT bars, mild/hot-rolled/cold-rolled and
+  structural steel, coated steel, wire rods, cement and bitumen sourced from certified mills;
+  JSW One Homes (jswonehomes.com), a turnkey home-construction service with digital project
+  tracking across fifteen Indian cities; JSW One Finance, the NBFC arm providing digital
+  credit lines, channel financing and invoice factoring to MSMEs and retailers; and private
+  brands JSW One TMT and One Helix. The platform reported FY25 gross merchandise value of
+  INR 12,567 crore across more than 84,000 registered MSMEs, and raised INR 575 crore in a
+  2025 round led by the State Bank of India. JSW One publishes no public developer program,
+  API reference or machine-readable contract; its customer-facing surfaces are the web
+  marketplace and the JSW One MSME mobile apps. It does publish a maintained llms.txt on both
+  of its consumer properties, plus an explicit AI/LLM bot-access policy on JSW One Homes.
+image: https://internal-assets.jswonemsme.com/JSW_One_Logo_footer_3f248bc727/JSW_One_Logo_footer_3f248bc727.svg
 url: https://raw.githubusercontent.com/api-evangelist/jsw-one/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- B2B Commerce
+- Marketplace
+- Construction
+- Steel
+- Building Materials
+- Manufacturing
+- Supply Chain
+- Embedded Finance
+- MSME
+- India
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jsw-one-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.jswonemsme.com/
+- type: About
+  url: https://www.jswonemsme.com/about-us
+- type: Support
+  url: https://www.jswonemsme.com/help-support
+- type: Blog
+  url: https://www.jswonemsme.com/blogs
+- type: GitHubOrganization
+  url: https://github.com/JSWOne
+- type: TermsOfService
+  url: https://www.jswonemsme.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.jswonemsme.com/privacy-policy
+- type: Login
+  url: https://www.jswonemsme.com/login
+- type: LLMsTxt
+  url: llms/jsw-one-llms.txt
+- type: LLMsTxt
+  url: llms/jsw-one-homes-llms.txt
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    JSW One is a B2B materials marketplace with no developer program of any kind - the
+    api., developer., docs. and apis. subdomains of jswonemsme.com do not resolve in DNS,
+    /openapi.json, /swagger.json, /graphql, /api-docs and every /.well-known/ path return a
+    hard 404 on www.jswonemsme.com and www.jswonehomes.com, the 830-URL sitemap contains no
+    developer or reference section, and the company's own GitHub org (github.com/JSWOne, 10
+    public repos) ships CI actions and internal automation but no SDK, spec or client library.
+  evidence:
+    - url: https://www.jswonemsme.com/openapi.json
+      status: 404
+    - url: https://www.jswonemsme.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.jswonemsme.com/sitemap.xml
+      status: 200
+    - url: https://www.jswonemsme.com/llms.txt
+      status: 200
+    - url: https://github.com/JSWOne
+      status: 200
+  checked: '2026-08-23'
