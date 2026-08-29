@@ -15,6 +15,17 @@ description: >-
   API reference or machine-readable contract; its customer-facing surfaces are the web
   marketplace and the JSW One MSME mobile apps. It does publish a maintained llms.txt on both
   of its consumer properties, plus an explicit AI/LLM bot-access policy on JSW One Homes.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://internal-assets.jswonemsme.com/JSW_One_Logo_footer_3f248bc727/JSW_One_Logo_footer_3f248bc727.svg
 url: https://raw.githubusercontent.com/api-evangelist/jsw-one/refs/heads/main/apis.yml
 x-type: company
