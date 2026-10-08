@@ -66,6 +66,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/jsw-one-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/jsw-one-rate-limits.yml
 - type: DomainSecurity
   url: security/jsw-one-domain-security.yml
 - type: Website
