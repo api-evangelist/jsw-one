@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/jsw-one/integrations
+- https://n8n.io/integrations/jsw-one/
+- https://composio.dev/toolkits/jsw-one
+- https://monid.ai/tools/jsw-one
+checked:
+- https://composio.dev/toolkits/jsw-one
+- https://monid.ai/tools/jsw-one
+- https://n8n.io/integrations/jsw-one/
+- https://zapier.com/apps/jsw-one/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
