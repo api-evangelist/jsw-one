@@ -64,29 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-JSW One Platforms is the digital B2B arm of India's JSW Group, operating a full-stack e-commerce
-and services platform for the country's manufacturing and construction MSMEs. It runs four
-connected businesses on one technology stack: **JSW One Commerce** (jswonemsme.com), a multi-brand
-marketplace for TMT bars, mild/hot-rolled/cold-rolled and structural steel, coated steel, wire rods,
-cement and bitumen; **JSW One Homes** (jswonehomes.com), a turnkey home-construction service with
-digital project tracking across fifteen Indian cities; **JSW One Finance**, the NBFC arm providing
-digital credit lines, channel financing and invoice factoring; and private brands **JSW One TMT**
-and **One Helix**.
+JSW One Platforms is the digital B2B arm of India's JSW Group, operating a full-stack e-commerce and services platform for the country's manufacturing and construction MSMEs. It runs four connected businesses on one technology stack: JSW One Commerce (jswonemsme.com), a multi-brand marketplace for TMT bars, mild/hot-rolled/cold-rolled and structural steel, coated steel, wire rods, cement and bitumen sourced from certified mills; JSW One Homes (jswonehomes.com), a turnkey home-construction service with digital project tracking across fifteen Indian cities; JSW One Finance, the NBFC arm providing digital credit lines, channel financing and invoice factoring to MSMEs and retailers; and private brands JSW One TMT and One Helix. The platform reported FY25 gross merchandise value of INR 12,567 crore across more than 84,000 registered MSMEs, and raised INR 575 crore in a 2025 round led by the State Bank of India. JSW One publishes no public developer program, API reference or machine-readable contract; its customer-facing surfaces are the web marketplace and the JSW One MSME mobile apps. It does publish a maintained llms.txt on both of its consumer properties, plus an explicit AI/LLM bot-access policy on JSW One Homes.
 
-## API surface
+**Areas:** Company · B2B Commerce · Marketplace · Construction · Steel · Building Materials · Manufacturing · Supply Chain · Embedded Finance · MSME · India · E-Commerce
 
-JSW One publishes **no public API, developer portal, SDK or machine-readable contract**. Probed
-2026-08-23: `api.`, `developer.`, `docs.` and `apis.jswonemsme.com` do not resolve in DNS;
-`/openapi.json`, `/swagger.json`, `/graphql`, `/api-docs` and every `/.well-known/` path return a
-hard 404 on both `www.jswonemsme.com` and `www.jswonehomes.com`; the 830-URL sitemap has no
-developer or reference section; and the company's GitHub org
-([github.com/JSWOne](https://github.com/JSWOne)) ships CI actions and internal automation but no
-SDK, spec or client library.
+## JSW One on APIs.io
 
-What it *does* publish is an agent-readable content surface: a maintained `llms.txt` on both
-consumer properties, and an explicit AI/LLM bot-access policy (Allow-Training / Allow-Retrieval per
-named crawler) inside the JSW One Homes `llms.txt`. Both are captured verbatim under `llms/`.
+Everything profiled for JSW One is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jsw-one/](https://apis.io/providers/jsw-one/)** — or go straight to one of the APIs or properties below.
 
-- Website: https://www.jswonemsme.com/
-- JSW One Homes: https://www.jswonehomes.com/
-- GitHub: https://github.com/JSWOne
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Jsw One Domain Security](https://apis.io/security/jsw-one/jsw-one-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Jsw One Plans Pricing](https://apis.io/plans/jsw-one/jsw-one-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Jsw One Rate Limits](https://apis.io/rate-limits/jsw-one/jsw-one-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.jswonemsme.com/)
+- [Support](https://www.jswonemsme.com/help-support)
+- [Blog](https://www.jswonemsme.com/blogs)
+- [Terms of service](https://www.jswonemsme.com/terms-conditions)
+- [Privacy policy](https://www.jswonemsme.com/privacy-policy)
+- [GitHub](https://github.com/JSWOne)
+
+## API Evangelist rating
+
+**Kin Score 12.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jsw-one/](https://apis.io/providers/jsw-one/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for JSW One: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jsw-one/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
